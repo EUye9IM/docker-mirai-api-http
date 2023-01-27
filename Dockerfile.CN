@@ -2,6 +2,8 @@ From alpine
 
 ARG MCL_VERSION=2.1.2
 
+COPY setting.yml /mcl/config/net.mamoe.mirai-api-http/setting.yml
+
 RUN sed -i 's/https\?:\/\/dl-cdn.alpinelinux.org\/alpine\//http:\/\/mirrors.tuna.tsinghua.edu.cn\/alpine\//g' /etc/apk/repositories \
 &&  apk update \
 &&  apk add openjdk17-jre wget unzip \

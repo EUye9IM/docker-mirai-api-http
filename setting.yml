@@ -1,0 +1,12 @@
+adapters:
+  - ws
+debug: false
+enableVerify: false
+verifyKey: INITKEY
+singleMode: false
+cacheSize: 4096
+persistenceFactory: 'built-in'
+adapterSettings:
+  ws:
+    host: localhost
+    port: 8080
