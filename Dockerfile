@@ -2,7 +2,7 @@ From alpine
 
 ARG MCL_VERSION=2.1.2
 
-COPY setting.yml /mcl/config/net.mamoe.mirai-api-http/setting.yml
+COPY mcl /mcl
 
 RUN apk update \
 &&  apk add openjdk17-jre wget unzip \

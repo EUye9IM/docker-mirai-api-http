@@ -1,6 +1,6 @@
 # docker-mirai-api-http
 
-
+基于[mirai-console-loader](https://github.com/iTXTech/mirai-console-loader) 与 [mirai-api-http](https://github.com/project-mirai/mirai-api-http) 的容器
 
 ## Ussage
 
@@ -25,4 +25,8 @@ docker run -it -p 8080:8080 --name=mirai-http mirai-http
 
 默认配置文件没有认证，注意不要把端口暴露于公网
 
-> wsl 下使用，请适当使用 --network=host
+> 请适当使用 --network=host 能够粗暴地解决一些网络问题
+
+配置文件在mcl文件夹内，请参阅 [mirai-console-loader](https://github.com/iTXTech/mirai-console-loader) 与 [mirai-api-http](https://github.com/project-mirai/mirai-api-http) 的相关文档
+
+默认配置在 8080 监听 websocket 连接
