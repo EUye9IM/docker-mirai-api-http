@@ -29,4 +29,4 @@ docker run -it -p 8080:8080 --name=mirai-http mirai-http
 
 配置文件在mcl文件夹内，请参阅 [mirai-console-loader](https://github.com/iTXTech/mirai-console-loader) 与 [mirai-api-http](https://github.com/project-mirai/mirai-api-http) 的相关文档
 
-默认配置在 8080 监听 websocket 连接
+默认配置在 8080 监听 websocket 连接，第一次进入容器需要手动配置 autologin
